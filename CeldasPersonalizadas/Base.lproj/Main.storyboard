@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,71 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CeldasPersonalizadas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="irB-ZD-tpj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellAlumno" rowHeight="81" id="ME0-Xh-Ytl" customClass="CeldaAlumno" customModule="CeldasPersonalizadas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ME0-Xh-Ytl" id="SpP-7C-VGb">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="80.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alumno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC4-sw-QqD">
+                                                    <rect key="frame" x="15" y="30" width="58" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-mg-Mm2">
+                                                    <rect key="frame" x="271" y="11" width="49" height="53"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SC4-sw-QqD" firstAttribute="leading" secondItem="SpP-7C-VGb" secondAttribute="leadingMargin" id="1gn-fq-59n"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lvh-mg-Mm2" secondAttribute="bottom" constant="6" id="3wv-ls-bh9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lvh-mg-Mm2" secondAttribute="trailing" constant="14" id="FSt-46-GK7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="SC4-sw-QqD" secondAttribute="bottom" constant="19" id="Qus-04-IUn"/>
+                                                <constraint firstItem="lvh-mg-Mm2" firstAttribute="leading" secondItem="SC4-sw-QqD" secondAttribute="trailing" constant="198" id="Y8Z-GV-T8A"/>
+                                                <constraint firstItem="SC4-sw-QqD" firstAttribute="top" secondItem="SpP-7C-VGb" secondAttribute="topMargin" constant="19" id="eFO-ZO-OWy"/>
+                                                <constraint firstItem="lvh-mg-Mm2" firstAttribute="top" secondItem="SpP-7C-VGb" secondAttribute="topMargin" id="vpH-uG-C3j"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.379169762134552" green="0.8231167197227478" blue="0.91195708513259888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="lblAlumno" destination="SC4-sw-QqD" id="CdW-6S-U8P"/>
+                                            <outlet property="lblPromedio" destination="lvh-mg-Mm2" id="zhK-zC-kKG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cj2-M5-ZZh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="htZ-OM-1Gd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="irB-ZD-tpj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Diu-je-OSK"/>
+                            <constraint firstItem="irB-ZD-tpj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bXr-PL-1ne"/>
+                            <constraint firstItem="irB-ZD-tpj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kbM-sZ-NdI"/>
+                            <constraint firstItem="irB-ZD-tpj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nTe-hW-NZ4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>

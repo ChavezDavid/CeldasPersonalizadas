@@ -14,6 +14,7 @@
 		3D137BF72151D82D0087A0A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D137BF52151D82D0087A0A4 /* LaunchScreen.storyboard */; };
 		3D137C022151D82D0087A0A4 /* CeldasPersonalizadasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D137C012151D82D0087A0A4 /* CeldasPersonalizadasTests.swift */; };
 		3D137C0D2151D82D0087A0A4 /* CeldasPersonalizadasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D137C0C2151D82D0087A0A4 /* CeldasPersonalizadasUITests.swift */; };
+		3D137C1B2151DA380087A0A4 /* celdaAlumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D137C1A2151DA380087A0A4 /* celdaAlumno.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3D137C082151D82D0087A0A4 /* CeldasPersonalizadasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeldasPersonalizadasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D137C0C2151D82D0087A0A4 /* CeldasPersonalizadasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldasPersonalizadasUITests.swift; sourceTree = "<group>"; };
 		3D137C0E2151D82D0087A0A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D137C1A2151DA380087A0A4 /* celdaAlumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celdaAlumno.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3D137BF32151D82D0087A0A4 /* Assets.xcassets */,
 				3D137BF52151D82D0087A0A4 /* LaunchScreen.storyboard */,
 				3D137BF82151D82D0087A0A4 /* Info.plist */,
+				3D137C1A2151DA380087A0A4 /* celdaAlumno.swift */,
 			);
 			path = CeldasPersonalizadas;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				3D137BEF2151D8200087A0A4 /* ViewController.swift in Sources */,
 				3D137BED2151D8200087A0A4 /* AppDelegate.swift in Sources */,
+				3D137C1B2151DA380087A0A4 /* celdaAlumno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+class CeldaAlumno : UITableViewCell {
+    
+    @IBOutlet weak var lblAlumno: UILabel!
+    @IBOutlet weak var lblPromedio: UILabel!
+}
